@@ -1,12 +1,23 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path');
+const http = require('http');
+const app = express();
 
-app.use(express.static('dist'));
+// Angular DIST output folder
+app.use(express.static(path.join(__dirname, 'dist')));
 
-app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/index.html');
-})
 
-app.listen(8081, function () {
-  console.log('Example app listening on port 3000!')
-})
+// Send all other requests to the Angular app
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dist/index.html'));
+});
+
+const port = process.env.PORT || '3000';
+app.set('port', port);
+
+const server = http.createServer(app);
+
+server.listen(port, () => {
+  console.log(`Running on localhost:${port}`);
+}); 
