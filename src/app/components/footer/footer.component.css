@@ -1,0 +1,121 @@
+footer {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    background: black;
+    padding: 30px 0 30px 0;
+}
+
+footer h1 {
+    font-family: "Lobster";
+    color: white;
+    font-size: 60px;
+}
+
+footer h4 {
+    color: white;
+    font-size: 18px;
+    font-family: "Lobster";
+}
+
+i {
+    transition: 0.4s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+}
+
+.back-to-top p {
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+}
+
+.fa {
+    font-size: 18px;
+}
+
+.fa-chevron-up {
+    font-size: 22px;
+    color: #333;
+}
+
+.fa-chevron-up:hover {
+    color: gray;
+}
+
+#map {
+    /* width: 90%; */
+    height: 600px;
+    margin: auto;
+    border: 7px solid #fff;
+    background: #fff;
+}
+
+.suat-an {
+    width: 450px;
+    position: absolute;
+    transform: translate(300px, -260px);
+}
+
+.info {
+    position: relative;
+}
+
+.info2 {
+    /* width: 90%; */
+    height: 320px;
+    margin: auto;
+    text-align: left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.website {
+    font-family: 'Satisfy';
+}
+
+.gallary {
+    display: flex;
+    width: 300px;
+    flex-flow: row wrap;
+}
+
+.sm-img {
+    width: 90px;
+    height: 70px;
+    padding: 0 4px 4px 0;
+}
+
+/* @media (max-width: 768px) {
+    .suat-an {
+        display: none;
+    }
+} */
+
+/* @media (max-width: 576px) {
+    #map {
+        display: none;
+    }
+}  */
+

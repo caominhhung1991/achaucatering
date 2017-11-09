@@ -1,0 +1,51 @@
+
+nav {
+	height: 90px;
+	font-family: 'Roboto'; 
+	background-color: white;
+}
+.navbar-brand img {
+	width: 150px;
+}
+.navbar-toggler-icon {
+	color: white !important;
+}
+
+.nav-link {
+	font-weight: 500;
+}
+
+.nav-link:hover {
+}
+
+.social-icon i {
+	font-size: 20px;
+	color: lightgray;
+}
+
+.social-icon i:hover {
+	color: gray;
+}
+
+@media only screen and (max-width: 760px) {
+	nav {
+		height: auto;
+	}
+}
+
+.active {
+	/* background: #136C37;
+	color: white !important; */
+}
+
+.nav-link {
+	transition: 0.1s ease-in;
+	margin-right: 2px;
+	font-weight: bold;
+}
+
+.nav-link:hover {
+	background: #3CAF6A;
+	color: white !important;
+	
+}

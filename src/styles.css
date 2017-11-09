@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+@media (max-width: 768px) {
+    .suat-an {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    /* #map {
+        display: none;
+    } */
+    .cantin-1 h1 {
+        
+        font-size: 30px;
+        width: 300px !important;
+        line-height: 30px !important;
+    }
+}
