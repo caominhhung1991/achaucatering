@@ -18,16 +18,17 @@
 
 .row {
     margin-left: 0;
+    margin-right: 0;
 }
 
 .anh1 {
-    width: 650px !important;
-    margin-left: -100px;
+    width: 650px;
+    margin-left:-100px;
 }
 
 .info {
     text-align: center;
-    width: 330px;
+    width: 70%;
     margin: auto;
     margin-bottom: 100px;
 }

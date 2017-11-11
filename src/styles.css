@@ -1,20 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+@media (max-width: 992px) {  
+     /*Giới thiệu 1 - gioi-thieu-1.component  */
+    .gioi-thieu .left {
+        height: 250px !important;
+    }
+    .gioi-thieu .introduce-company {
+        padding-top: 30px !important;
+    }
+
+    /* Healthy food - healthy-food.component */
+    .healthy-food .info {
+        margin-bottom: 30px !important;
+    }
+
+}
 
 @media (max-width: 768px) {
+    /* Healthy food - healthy-food.component */
+    .healthy-food .anh1 {
+        position: relative;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    .healthy-food .center-info {
+        top: 37% !important;
+        left: 41% !important;
+        font-size: 6vw !important;
+    }
+
+    .healthy-food .info {
+        width: 60% !important;
+    }
+    
+    /* Dịch vụ - dich-vu.component */
+    .dich-vu .card {
+        margin: 0 10px 15px 10px !important;
+        flex: 1 1 100% !important;
+    }
     .suat-an {
-        display: none;
+        /* display: none; */
     }
     
 }
 
 @media (max-width: 576px) {
-    /* #map {
-        display: none;
-    } */
     .cantin-1 h1 {
-        
         font-size: 30px;
         width: 300px !important;
         line-height: 30px !important;
     }
+
+    .card-group .card {
+        /* f */
+        /* width: 300px !important; */
+    }
+
+    /* Gioi thieu 2 - gioi-thieu-2.component */
+    .gioi-thieu-2 .card {
+        width: 85% !important;
+    }
+
+    .gioi-thieu-2 h2 {
+        font-size: 30px !important;
+    }
+
+    .gioi-thieu-2 h6 {
+        font-size: 16px !important;
+    }
+
+    /* slider info  */
+    .slider-info h1 {
+        font-size: 28px;
+    }
+
+    .slider-info p {
+        font-size: 14px;
+    }
+
 }

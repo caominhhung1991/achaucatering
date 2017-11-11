@@ -1,35 +1,23 @@
 /* Cac dich vu*/
-.gioi-thieu {
+.gioi-thieu-2 {
     display: flex;
     flex-flow: row nowrap;
     align-content: center;
     justify-content: center;
     background: url("../../../assets/gioi-thieu2.jpg") no-repeat center center;
     background-size: cover;
-    padding: 100px;
+    padding: 100px 0;
 }
-
-.gioi-thieu h2, .gioi-thieu h4 {
+.card {
+    width: 70%;
+}
+.gioi-thieu-2 h2, .gioi-thieu-2 h4, .gioi-thieu-2 h6 {
     font-family: 'Lobster';
-}
-
-.gioi-thieu .the {
-    width: 550px;
-    padding: 60px 30px;
-    height: 600px;
-    margin: 0 20px;
-    background-color: white;
     text-align: center;
 }
 
-.gioi-thieu .the p {
-    font-size: 16px;
-}
-
-.gioi-thieu .the a {
-    text-decoration: none;
-    transition: 0.4s;
-    /* background: #3CAF6A; */
+.gioi-thieu-2 h2 {
+    font-size: 45px;
 }
 
 .the-border-bottom {
@@ -37,10 +25,15 @@
     height: 8px;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 30px;
     border-top: 2px solid #333;
     border-bottom: 2px solid #333;
 }
 
+.card-footer {
+    border: none;
+    text-align: center;
+}
 .xem-menu {
     background: white;
     border: 2px solid #333;
@@ -53,6 +46,3 @@
     color: white;
 }
 
-p {
-    margin: 10px 0;
-}
