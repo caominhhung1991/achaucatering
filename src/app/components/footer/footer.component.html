@@ -40,12 +40,12 @@
             <div class="col-md-3 col-sm-6">
                 <h4>Gallary</h4>
                 <div class="gallary">
-                    <img class="sm-img" src="../../../assets/img/gallary/anh1.jpg">
-                    <img class="sm-img" src="../../../assets/img/gallary/anh2.jpg">
-                    <img class="sm-img" src="../../../assets/img/gallary/anh3.jpg">
-                    <img class="sm-img" src="../../../assets/img/gallary/anh4.jpg">
-                    <img class="sm-img" src="../../../assets/img/gallary/anh5.jpg">
-                    <img class="sm-img" src="../../../assets/img/gallary/anh5.jpg">
+                    <img class="sm-img" src="assets/img/gallary/anh1.jpg">
+                    <img class="sm-img" src="assets/img/gallary/anh2.jpg">
+                    <img class="sm-img" src="assets/img/gallary/anh3.jpg">
+                    <img class="sm-img" src="assets/img/gallary/anh4.jpg">
+                    <img class="sm-img" src="assets/img/gallary/anh5.jpg">
+                    <img class="sm-img" src="assets/img/gallary/anh5.jpg">
                 </div>
             </div>
         </div>
@@ -67,5 +67,25 @@
     </div>
 
     <!-- <div class="suat-an"></div> -->
-    <!-- <img class="suat-an" src="../../../assets/footer-suatan.png" alt="suat an"> -->
+    <!-- <img class="suat-an" src="assets/footer-suatan.png" alt="suat an"> -->
 </footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3T-BlBd0ZXo8nOLXjy1wI3YgOKlvDzro&callback=initMap" async defer></script>
+<script>
+  function initMap() {
+    var myLatLng = {lat: 11.0687202, lng: 106.6674429};
+
+    // Create a map object and specify the DOM element for display.
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: myLatLng,
+      zoom: 15
+    });
+
+    // Create a marker and set its position.
+    var marker = new google.maps.Marker({
+      map: map,
+      position: myLatLng,
+      title: 'Á Châu Catering! số 54-56, đường 44, quận Hoà Phú, Thủ Dầu Một, Bình Dương'
+    });
+  }
+</script>
