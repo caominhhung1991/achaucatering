@@ -61,18 +61,18 @@ $(document).ready(() => {
     // .addTo(controller);
 
 // Function to add class of animate.css
-    $.fn.extend({
-        animateCss: function (animationName, callback) {
-            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-            this.addClass('animated ' + animationName).one(animationEnd, function() {
-                $(this).removeClass('animated ' + animationName);
-                if (callback) {
-                  callback();
-                }
-            });
-            return this;
-        }
-    });
+    // $.fn.extend({
+    //     animateCss: function (animationName, callback) {
+    //         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    //         this.addClass('animated ' + animationName).one(animationEnd, function() {
+    //             $(this).removeClass('animated ' + animationName);
+    //             if (callback) {
+    //               callback();
+    //             }
+    //         });
+    //         return this;
+    //     }
+    // });
 
 });
 

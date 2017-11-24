@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
 import { Nav1Component } from './components/nav1/nav1.component';
 import { Header1Component } from './components/header1/header1.component';
@@ -16,6 +16,7 @@ import { GioiThieu3Component } from './components/gioi-thieu3/gioi-thieu3.compon
 import { AppRoutingModule } from './app-routing.module';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { LienHeComponent } from './components/chi-tiet/lien-he/lien-he.component';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
@@ -32,10 +33,14 @@ import { LienHeComponent } from './components/chi-tiet/lien-he/lien-he.component
     Map1Component,
     GioiThieu3Component,
     HomePageComponent,
-    LienHeComponent
+    LienHeComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyD3T-BlBd0ZXo8nOLXjy1wI3YgOKlvDzro'
+    }),
     AppRoutingModule
   ],
   providers: [],
