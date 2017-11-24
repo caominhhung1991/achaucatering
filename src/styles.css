@@ -63,7 +63,7 @@
     .cantin-1 h1 {
         font-size: 30px;
         width: 300px !important;
-        line-height: 30px !important;
+        line-height: 36px !important;
     }
 
     .card-group .card {
@@ -91,6 +91,11 @@
 
     .slider-info p {
         font-size: 14px;
+    }
+
+    /* footer */
+    .footer-heading {
+        font-size: 50px !important;
     }
 
 }

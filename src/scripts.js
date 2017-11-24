@@ -23,7 +23,7 @@ $(document).ready(() => {
         var scene = new ScrollMagic.Scene({
             triggerElement: this.children[0],
             triggerHook: 0.6, // 
-            reverse: false // false: chi xay ra 1 lan, true: xay ra lap lai
+            reverse: true // false: chi xay ra 1 lan, true: xay ra lap lai
         })
         .setClassToggle(this, 'fade-in') // add class to id trigger1
         // .addIndicators({

@@ -13,6 +13,9 @@ import { GioiThieu2Component } from './components/gioi-thieu2/gioi-thieu2.compon
 import { HealthyFoodComponent } from './components/healthy-food/healthy-food.component';
 import { Map1Component } from './components/map1/map1.component';
 import { GioiThieu3Component } from './components/gioi-thieu3/gioi-thieu3.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { LienHeComponent } from './components/chi-tiet/lien-he/lien-he.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +30,13 @@ import { GioiThieu3Component } from './components/gioi-thieu3/gioi-thieu3.compon
     GioiThieu2Component,
     HealthyFoodComponent,
     Map1Component,
-    GioiThieu3Component
+    GioiThieu3Component,
+    HomePageComponent,
+    LienHeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light">
-	<a class="navbar-brand" href="#"><img src="../../../assets/logo_cantin.gif" alt=""></a>
+	<a class="navbar-brand" routerLink=""><img src="../../../assets/logo_cantin.gif" alt=""></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1" aria-controls="nav1" aria-expanded="false"
     aria-label="Toggle navigation">
@@ -11,17 +11,27 @@
       <li class="nav-item">
         <a class="nav-link active" href="#">Trang chủ</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Quầy căn tin</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dịch vụ
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="nav-link dropdown-item pl-3" href="#">Suất ăn công nghiệp</a>
+          <a class="nav-link dropdown-item pl-3" href="#">Cung cấp thực phẩm</a>
+          <a class="nav-link dropdown-item pl-3" href="#">Quầy dịch vụ tiện ích</a>
+          <a class="nav-link dropdown-item pl-3" href="#">Tổ chức tiệc hội nghị, sự kiện</a>
+          <a class="nav-link dropdown-item pl-3" href="#">Tư vấn thiết kế, xây dựng bếp</a>
+          <a class="nav-link dropdown-item pl-3" href="#">Chuỗi nhà thuốc</a>
+        </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Suất ăn</a>
+        <a class="nav-link" href="#">Tin tức & Sự kiện</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Chuỗi nhà thuốc</a>
+        <a class="nav-link" href="#">Tuyển dụng</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Liên hệ</a>
+        <a class="nav-link" routerLink="lien-he">Liên hệ</a>
       </li>
     </ul>
 

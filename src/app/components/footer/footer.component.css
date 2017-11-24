@@ -67,8 +67,16 @@ ul {
 
 li {
     color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     font-size: 14px;
+}
+
+li a:hover {
+    color: black;
+}
+
+li a {
+    color: #333;
 }
 
 .website {
@@ -87,6 +95,12 @@ li {
     padding: 0 4px 4px 0;
 }
 
-.col-md-3, .col-sm-6 {
+.col-md-3, .col-sm-6, .col-md-4 {
     margin-bottom: 10px;
+}
+
+.chitiet {
+    padding: 0 25px;
+    border: 1px solid #333;
+    margin-bottom: 3px;
 }
