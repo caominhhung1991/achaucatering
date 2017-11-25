@@ -7,10 +7,12 @@ import { } from '@agm/core';
 })
 export class MapComponent implements OnInit {
   title: string = 'My first AGM project';
-  lat: number = 11.0687202;
-  lng: number = 106.6674429;
+  lat: number = 11.069240;
+  lng: number = 106.695806;
   constructor() { }
-
+  // 11.069240, 106.695806
+  
+  
   ngOnInit() {
   }
 

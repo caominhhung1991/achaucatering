@@ -1,0 +1,14 @@
+h1 {
+    font-family: 'Anton';
+    color: #28a745;
+}
+
+/* .img-cangtin {
+    width: 100%;
+} */
+
+@media (max-width: 576px) {
+    .img-cangtin {
+        margin-bottom: 20px;
+    }
+}

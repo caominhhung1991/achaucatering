@@ -15,7 +15,8 @@ export class AppService {
       id: 1,
       chucdanh: 'Quản lý',
       bophan: 'Quản lý',
-      diadiem: 'Bình Dương, Đồng Nai',
+      soluong: '5',
+      diadiem: 'Tp.HCM, Bình Dương, Đồng Nai',
       ngayhethan: '',
       mota: {
         bangcap: "Tốt nghiệp Trung cấp, Cao Đẳng - Đại học ngành công nghệ thực phẩm, Kỹ thuật nữ công hoặc quản trị nhà hàng khách sạn.",
@@ -23,16 +24,16 @@ export class AppService {
         kynang: [
           "Có kỹ năng tổ chức lãnh đạo, quản lý nhân viên, giao tiếp tốt với khách hàng.",
           "Nhanh nhẹn, trung thực, nhiệt tình.",
-          "Có kiến thức về vệ sinh an toàn thực phẩm, biết cách lập thực đơn, oder, báo cáo chi phí.",
-          "Đối với Quản lý làm việc tại khu vực Đồng Nai ưu tiên người địa phương."
+          "Có kiến thức về vệ sinh an toàn thực phẩm, biết cách lập thực đơn, oder, báo cáo chi phí."
         ]
       }
     },
     {
       id: 2,
       chucdanh: 'Đầu bếp',
+      soluong: '10',
       bophan: 'Nhà bếp',
-      diadiem: 'Tp.HCM',
+      diadiem: 'Tp.HCM, Bình Dương, Đồng Nai',
       ngayhethan: '',
       mota: {
         bangcap: "Có chứng chỉ nấu ăn.",
@@ -47,30 +48,33 @@ export class AppService {
     {
       id: 3,
       chucdanh: 'Phụ bếp',
+      soluong: '10',
       bophan: 'Nhà bếp',
-      diadiem: 'Biên Hòa, Đồng Nai',
+      diadiem: 'Tp.HCM, Bình Dương, Đồng Nai',
       ngayhethan: '',
       mota: {
         bangcap: "Không yêu cầu",
         kinhnghiem: "Không yêu cầu",
         kynang: [
           "Có khả năng nấu ăn.",
-          "Có sức khỏe, chăm chỉ, nhiệt tình."
+          "Có sức khỏe, chăm chỉ, nhiệt tình.",
+          "Ưu tiên người địa phương"
         ]
       }
     },
     {
       id: 4,
       chucdanh: 'Lao động phổ thông',
+      soluong: '15',
       bophan: 'Quầy phục vụ',
-      diadiem: 'Biên Hòa, Đồng Nai',
+      diadiem: 'Tp.HCM, Bình Dương, Đồng Nai',
       ngayhethan: '',
       mota: {
         bangcap: "Không yêu cầu",
         kinhnghiem: "Không yêu cầu",
         kynang: [
           "Khỏe mạnh, nhanh nhẹn, chăm chỉ.",
-          "Đối với khu vực đồng nai ưu tiên người địa phương"
+          "Ưu tiên người địa phương"
         ]
       }
     }
@@ -88,7 +92,7 @@ export class AppService {
 
   gotoTop(number) {
     // $(window).scrollTop(number, number);
-    window.scrollTo(number, number);
+    $("html, body").animate({ scrollTop: number }, "slow");
     console.log("gotoTop")
   }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TweenMax } from 'gsap';
 import * as ScrollMagic from 'ScrollMagic';
+import { AppService } from '../../services/app.service';
 
 @Component({
   selector: 'app-dich-vu',
@@ -9,7 +10,9 @@ import * as ScrollMagic from 'ScrollMagic';
 })
 export class DichVuComponent implements OnInit {
   public controller = new ScrollMagic.Controller();
-  constructor() { }
+  constructor(
+    private appService: AppService
+  ) { }
 
   ngOnInit() {
     let trigHook = 0.6;
@@ -38,6 +41,10 @@ export class DichVuComponent implements OnInit {
     })
       .setClassToggle("#dv3", 'fade-in') // add class to id trigger1
       .addTo(this.controller);
+  }
+
+  gotoTop(number, route) {
+    this.appService.gotoTop(number);
   }
 
 }

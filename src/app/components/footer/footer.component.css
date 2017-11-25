@@ -111,3 +111,10 @@ li a {
     border: 1px solid #333;
     margin-bottom: 3px;
 }
+
+.gototop {
+    z-index: 100;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}

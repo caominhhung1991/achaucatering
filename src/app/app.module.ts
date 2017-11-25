@@ -20,6 +20,9 @@ import { MapComponent } from './components/map/map.component';
 import { AppService } from './services/app.service';
 import { TuyenDungComponent } from './components/tuyen-dung/tuyen-dung.component';
 import { TuyendungDetailComponent } from './components/tuyendung-detail/tuyendung-detail.component';
+import { TintucSukienComponent } from './components/tintuc-sukien/tintuc-sukien.component';
+import { DichvuModule } from './dichvu/dichvu.module';
+import { DoiTacComponent } from './components/doi-tac/doi-tac.component';
 
 @NgModule({
   declarations: [
@@ -39,13 +42,16 @@ import { TuyendungDetailComponent } from './components/tuyendung-detail/tuyendun
     LienHeComponent,
     MapComponent,
     TuyenDungComponent,
-    TuyendungDetailComponent
+    TuyendungDetailComponent,
+    TintucSukienComponent,
+    DoiTacComponent
   ],
   imports: [
     BrowserModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyD3T-BlBd0ZXo8nOLXjy1wI3YgOKlvDzro'
     }),
+    DichvuModule,
     AppRoutingModule
   ],
   providers: [AppService],

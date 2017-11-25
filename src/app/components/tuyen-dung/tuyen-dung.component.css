@@ -1,5 +1,5 @@
 .tuyen-dung-img {
-    height: 350px;
+    height: 500px;
     background: url('./../../../assets/img/tuyen-dung.jpg') center;
     background-size: cover;
 }
@@ -20,7 +20,8 @@
     padding-top: 30px;
 }
 
-.tuyen-dung h3 {
+h2 {
+    font-family: 'anton';
     color: #28a745;
 }
 

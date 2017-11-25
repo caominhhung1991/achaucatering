@@ -1,7 +1,7 @@
 <div class="tuyen-dung-img"></div>
 
 <div class="container my-4" id="top">
-  <h3 class="text-center">MÔ TẢ CÔNG VIỆC</h3>
+  <h2 class="text-center">MÔ TẢ CÔNG VIỆC</h2>
 
   <div class="card my-3">
     <div class="card-header">
@@ -11,6 +11,8 @@
       <div class="card-body">
         <p class="card-text">
           <strong>Bộ phận:</strong> {{_tuyendung.bophan}}</p>
+          <p class="card-text">
+              <strong>Số lượng:</strong> {{_tuyendung.soluong}}</p>
         <p class="card-text">
           <strong>Địa điểm làm việc:</strong> {{_tuyendung.diadiem}}</p>
         <p class="card-text">
@@ -37,32 +39,40 @@
     </li>
   </ol>
 
-  <button class="btn btn-success">Nộp đơn <i class="fa fa-long-arrow-right"></i></button>
-  
+  <button class="btn btn-success">Nộp đơn
+    <i class="fa fa-long-arrow-right"></i>
+  </button>
+
 </div>
 
 <div class=" tuyen-dung">
   <div class="container">
-    <h3 class="text-center">VỊ TRÍ TUYỂN DỤNG</h3>
+    <h2 class="text-center">VỊ TRÍ TUYỂN DỤNG</h2>
   </div>
   <div id="tttd" class="card-group flex-column">
     <div class="card" *ngFor="let tuyendung of tuyendungs">
       <div class="card-header pointer" data-toggle="collapse" [attr.data-target]="'#'+tuyendung.id" (click)="onSelect(tuyendung)"
-          [class.active]="tuyendung === selectedTD">
-          {{tuyendung.chucdanh}} <i *ngIf="tuyendung !== selectedTD" class="fa fa-plus closed"></i><i *ngIf="tuyendung === selectedTD"  class="fa fa-minus opend"></i>
+        [class.active]="tuyendung === selectedTD">
+        {{tuyendung.chucdanh}}
+        <span data-toggle="collapse" [attr.data-target]="'#'+tuyendung.id" (click)="onSelect(tuyendung)" [class.active]="tuyendung === selectedTD">
+          <i *ngIf="tuyendung !== selectedTD" class="fa fa-plus closed"></i>
+          <i *ngIf="tuyendung === selectedTD" class="fa fa-minus opend"></i>
+        </span>
       </div>
       <div id="{{tuyendung.id}}" class="collapse" data-parent="#tttd">
         <div class="card-body">
           <p class="card-text">
             <strong>Bộ phận:</strong> {{tuyendung.bophan}}</p>
           <p class="card-text">
+            <strong>Số lượng:</strong> {{tuyendung.soluong}}</p>
+          <p class="card-text">
             <strong>Địa điểm làm việc:</strong> {{tuyendung.diadiem}}</p>
           <p class="card-text">
             <strong>Ngày hết hạn:</strong> {{tuyendung.ngayhethan}}
           </p>
-          <button class="btn btn-success mt-2 pointer"
-            [routerLink]="['..', tuyendung.id]" (click)="gotoTop(400)" href="#top"
-          >Xem thêm <i class="fa fa-long-arrow-right"></i></button>
+          <button class="btn btn-success mt-2 pointer" [routerLink]="['..', tuyendung.id]" (click)="gotoTop(400)" href="#top">Xem thêm
+            <i class="fa fa-long-arrow-right"></i>
+          </button>
         </div>
       </div>
     </div>
