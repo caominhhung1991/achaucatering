@@ -17,6 +17,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { LienHeComponent } from './components/chi-tiet/lien-he/lien-he.component';
 import { MapComponent } from './components/map/map.component';
+import { AppService } from './services/app.service';
+import { TuyenDungComponent } from './components/tuyen-dung/tuyen-dung.component';
+import { TuyendungDetailComponent } from './components/tuyendung-detail/tuyendung-detail.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ import { MapComponent } from './components/map/map.component';
     GioiThieu3Component,
     HomePageComponent,
     LienHeComponent,
-    MapComponent
+    MapComponent,
+    TuyenDungComponent,
+    TuyendungDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,7 @@ import { MapComponent } from './components/map/map.component';
     }),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

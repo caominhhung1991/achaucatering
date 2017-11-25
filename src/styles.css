@@ -8,7 +8,41 @@
     opacity: 1 !important;
 }
 
+.pointer {
+    cursor: pointer;
+}
+@media (min-width: 768px) {  
+    .row {
+        position: relative;
+    }
+   .footer-map {
+        position: absolute;
+        top: -120px;
+        left: 420px;
+   }
+}
 
+@media (min-width: 992px) {  
+    .row {
+        position: relative;
+    }
+   .footer-map {
+        position: absolute;
+        top: -120px;
+        left: 455px;
+   }
+}
+
+@media (min-width: 1200px) {  
+    .row {
+        position: relative;
+    }
+   .footer-map {
+        position: absolute;
+        top: -120px;
+        left: 555px;
+   }
+}
 
 @media (max-width: 992px) {  
      /*Giới thiệu 1 - gioi-thieu-1.component  */

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TweenMax } from 'gsap';
+import * as ScrollMagic from 'ScrollMagic';
 
 @Component({
   selector: 'app-dich-vu',
@@ -6,10 +8,36 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dich-vu.component.css']
 })
 export class DichVuComponent implements OnInit {
-
+  public controller = new ScrollMagic.Controller();
   constructor() { }
 
   ngOnInit() {
+    let trigHook = 0.6;
+
+    var headerScene = new ScrollMagic.Scene({
+      triggerElement: '#dv1',
+      triggerHook: trigHook, // 
+      reverse: true // false: chi xay ra 1 lan, true: xay ra lap lai
+    })
+      .setClassToggle("#dv1", 'fade-in') // add class to id trigger1
+      .addTo(this.controller);
+
+    var headerScene = new ScrollMagic.Scene({
+      triggerElement: '#dv2',
+      triggerHook: trigHook, // 
+      reverse: true // false: chi xay ra 1 lan, true: xay ra lap lai
+    })
+      .setClassToggle("#dv2", 'fade-in') // add class to id trigger1
+      .addTo(this.controller);
+
+
+    var headerScene = new ScrollMagic.Scene({
+      triggerElement: '#dv3',
+      triggerHook: trigHook, // 
+      reverse: true // false: chi xay ra 1 lan, true: xay ra lap lai
+    })
+      .setClassToggle("#dv3", 'fade-in') // add class to id trigger1
+      .addTo(this.controller);
   }
 
 }

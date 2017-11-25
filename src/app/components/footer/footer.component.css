@@ -55,6 +55,13 @@ h3 {
     background: #fff;
 }
 
+.footer-map {
+    
+    
+}
+app-map {
+    
+}
 .info {
     position: relative;
 }
@@ -95,7 +102,7 @@ li a {
     padding: 0 4px 4px 0;
 }
 
-.col-md-3, .col-sm-6, .col-md-4 {
+.col-md-2, .col-sm-6, .col-md-4, .col-md-6 {
     margin-bottom: 10px;
 }
 
