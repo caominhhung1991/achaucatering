@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AgmCoreModule } from '@agm/core';
 import { AchaucateringRoutingModule } from './achaucatering-routing.module';
+import { ComponentModule } from '../components/component.module';
 
 import { HomePageComponent } from './home-page/home-page.component';
 import { Header1Component } from '../components/header1/header1.component';
@@ -29,7 +30,8 @@ import { LienHeComponent } from './lien-he/lien-he.component';
       apiKey: 'AIzaSyD3T-BlBd0ZXo8nOLXjy1wI3YgOKlvDzro'
     }),
     AchaucateringRoutingModule,
-    DichvuModule
+    DichvuModule,
+    ComponentModule
   ],
   declarations: [
     HomePageComponent,    
