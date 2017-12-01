@@ -14,7 +14,6 @@ import { TintucSukienComponent } from './tintuc-sukien/tintuc-sukien.component';
 import { Nav1Component } from './nav1/nav1.component';
 import { GioiThieu1Component } from './gioi-thieu1/gioi-thieu1.component';
 import { GioiThieu2Component } from './gioi-thieu2/gioi-thieu2.component';
-import { GioiThieu3Component } from './gioi-thieu3/gioi-thieu3.component';
 import { HealthyFoodComponent } from './healthy-food/healthy-food.component';
 import { DichVuComponent } from './dich-vu/dich-vu.component';
 import { FooterComponent } from './footer/footer.component';
@@ -22,6 +21,7 @@ import { MapComponent } from './map/map.component';
 import { TuyenDungComponent } from './tuyen-dung/tuyen-dung.component';
 import { TuyendungDetailComponent } from './tuyendung-detail/tuyendung-detail.component';
 import { LienHeComponent } from './lien-he/lien-he.component';
+import { CacDoiTacComponent } from './cac-doi-tac/cac-doi-tac.component';
 
 @NgModule({
   imports: [
@@ -39,7 +39,7 @@ import { LienHeComponent } from './lien-he/lien-he.component';
     Header1Component,
     GioiThieu1Component,
     GioiThieu2Component,
-    GioiThieu3Component,
+    CacDoiTacComponent,
     HealthyFoodComponent,
     DichVuComponent,
     Slider1Component,

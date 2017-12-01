@@ -11,8 +11,8 @@ import { TuVanThietKeComponent } from './dichvu/tu-van-thiet-ke/tu-van-thiet-ke.
 import { TintucSukienComponent } from './tintuc-sukien/tintuc-sukien.component';
 import { TuyenDungComponent } from './tuyen-dung/tuyen-dung.component';
 import { TuyendungDetailComponent } from './tuyendung-detail/tuyendung-detail.component';
-import { GioiThieu3Component } from './gioi-thieu3/gioi-thieu3.component';
 import { LienHeComponent } from './lien-he/lien-he.component';
+import { CacDoiTacComponent } from './cac-doi-tac/cac-doi-tac.component';
 
 const achauRouting: Routes = [
   {
@@ -29,7 +29,7 @@ const achauRouting: Routes = [
       { path: 'tu-van-thiet-ke', component: TuVanThietKeComponent },
       { path: 'tuyen-dung', component: TuyenDungComponent },
       { path: 'tuyen-dung/:id', component: TuyendungDetailComponent },
-      { path: 'slider', component: GioiThieu3Component },
+      { path: 'slider', component: CacDoiTacComponent },
       { path: 'tintuc-sukien', component: TintucSukienComponent },
       { path: 'lien-he', component: LienHeComponent },
     ]
