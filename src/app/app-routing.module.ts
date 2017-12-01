@@ -1,19 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { HomePageComponent } from './components/home-page/home-page.component';
-import { LienHeComponent } from './components/chi-tiet/lien-he/lien-he.component';
-import { TuyenDungComponent } from './components/tuyen-dung/tuyen-dung.component';
-import { TuyendungDetailComponent } from './components/tuyendung-detail/tuyendung-detail.component';
-import { TintucSukienComponent } from './components/tintuc-sukien/tintuc-sukien.component';
+import { HomePageComponent } from './achaucatering/home-page/home-page.component';
+import { AchaucateringComponent } from './achaucatering/achaucatering/achaucatering.component';
+
 const appRoutes: Routes = [
-  { path: '', component: HomePageComponent },
-  { path: 'tintuc-sukien', component: TintucSukienComponent},
-  { path: 'lien-he', component: LienHeComponent},
-  { path: 'tuyen-dung', component: TuyenDungComponent},
-  { path: 'tuyen-dung/:id', component: TuyendungDetailComponent},
-  { path: '**', component: HomePageComponent }
+  { path: '**', component: AchaucateringComponent }
 ]
+
 @NgModule({
   imports: [
     CommonModule,
