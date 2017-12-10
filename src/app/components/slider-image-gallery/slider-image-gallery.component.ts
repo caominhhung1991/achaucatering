@@ -16,16 +16,9 @@ export class SliderImageGalleryComponent implements OnInit {
   ngOnInit() {
     // jssor_image_gallary_slider_init();
     $('.carousel').carousel({
-      interval: 3000
+      interval: 4000
     })
 
-    $('.carousel').swiperight((e) => {
-      $('.carousel').carousel('prev');
-    })
-
-    $('.carousel').swipeleft((e) => {
-      $('.carousel').carousel('next');
-    })
   }
 
   slideTo(index: number) {
