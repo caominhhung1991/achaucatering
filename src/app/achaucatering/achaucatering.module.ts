@@ -23,6 +23,7 @@ import { TuyendungDetailComponent } from './tuyendung-detail/tuyendung-detail.co
 import { LienHeComponent } from './lien-he/lien-he.component';
 import { CacDoiTacComponent } from './cac-doi-tac/cac-doi-tac.component';
 import { SuatAnCongNghiepComponent } from './dichvu/suat-an-cong-nghiep/suat-an-cong-nghiep.component';
+import { ThucDonToChucTiecComponent } from './thuc-don-to-chuc-tiec/thuc-don-to-chuc-tiec.component';
 
 @NgModule({
   imports: [
@@ -51,7 +52,8 @@ import { SuatAnCongNghiepComponent } from './dichvu/suat-an-cong-nghiep/suat-an-
     TuyenDungComponent,
     TuyendungDetailComponent,
     LienHeComponent,
-    SuatAnCongNghiepComponent
+    SuatAnCongNghiepComponent,
+    ThucDonToChucTiecComponent
   ]
 })
 export class AchaucateringModule { }

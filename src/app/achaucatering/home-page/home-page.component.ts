@@ -28,7 +28,7 @@ export class HomePageComponent implements OnInit, AfterContentInit {
     var headerScene = new ScrollMagic.Scene({
       triggerElement: '#header-cantin',
       triggerHook: 0,
-      duration: '60%'
+      duration: '55%'
     })
       .setPin('#header-cantin', { pushFollowers: false })
       .addTo(this.controller);

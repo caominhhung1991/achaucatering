@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+// declare variable jquery and $ to use jquery plugin
+declare var jquery: any;
+declare var $: any;
+
+
+
 @Component({
   selector: 'app-nav1',
   templateUrl: './nav1.component.html',
@@ -16,6 +22,10 @@ export class Nav1Component implements OnInit {
   }
 
   ngOnInit() {
+    $(".nav-click").on("click", () => {
+      $("#nav1").collapse("toggle");
+      window.scrollTo(0,0);
+    })
   }
 
 }

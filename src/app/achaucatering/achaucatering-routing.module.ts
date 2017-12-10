@@ -13,6 +13,7 @@ import { TuyenDungComponent } from './tuyen-dung/tuyen-dung.component';
 import { TuyendungDetailComponent } from './tuyendung-detail/tuyendung-detail.component';
 import { LienHeComponent } from './lien-he/lien-he.component';
 import { CacDoiTacComponent } from './cac-doi-tac/cac-doi-tac.component';
+import { ThucDonToChucTiecComponent } from './thuc-don-to-chuc-tiec/thuc-don-to-chuc-tiec.component';
 
 const achauRouting: Routes = [
   {
@@ -22,8 +23,8 @@ const achauRouting: Routes = [
       { path: '', component: HomePageComponent },
       { path: 'tintuc-sukien', component: TintucSukienComponent },
       { path: 'suat-an-cong-nghiep', component: SuatAnCongNghiepComponent },
-      { path: 'cung-cap-thuc-tham', component: CungCapThucPhamComponent },
-      { path: 'quay-dich-vu', component: QuayDichVuTienIchComponent },
+      { path: 'cung-cap-thuc-pham', component: CungCapThucPhamComponent },
+      { path: 'quay-dich-vu-tien-ich', component: QuayDichVuTienIchComponent },
       { path: 'chuoi-nha-thuoc', component: ChuoiNhaThuocComponent },
       { path: 'to-chuc-su-kien', component: ToChucSuKienComponent },
       { path: 'tu-van-thiet-ke', component: TuVanThietKeComponent },
@@ -32,6 +33,8 @@ const achauRouting: Routes = [
       { path: 'slider', component: CacDoiTacComponent },
       { path: 'tintuc-sukien', component: TintucSukienComponent },
       { path: 'lien-he', component: LienHeComponent },
+      { path: 'thuc-don-to-chuc-tiec', component: ThucDonToChucTiecComponent},
+      { path: '**', component: HomePageComponent}
     ]
   }
 ]

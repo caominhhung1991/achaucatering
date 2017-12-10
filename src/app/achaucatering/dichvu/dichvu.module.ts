@@ -9,11 +9,13 @@ import { TuVanThietKeComponent } from './tu-van-thiet-ke/tu-van-thiet-ke.compone
 import { ChuoiNhaThuocComponent } from './chuoi-nha-thuoc/chuoi-nha-thuoc.component';
 import { NoContentComponent } from './no-content/no-content.component';
 import { AchaucateringModule } from '../achaucatering.module';
+import { ComponentModule } from '../../components/component.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    DichvuRoutingModule
+    DichvuRoutingModule,
+    ComponentModule
   ],
   declarations: [
     CungCapThucPhamComponent, 

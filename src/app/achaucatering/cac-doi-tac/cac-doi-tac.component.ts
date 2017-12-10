@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-declare var jssor_1_slider_init: any;
+declare var jssor_thumpnail_slider_init: any;
 @Component({
   selector: 'app-cac-doi-tac',
   templateUrl: './cac-doi-tac.component.html',
@@ -13,6 +13,6 @@ export class CacDoiTacComponent implements OnInit, AfterViewInit {
   };
 
   ngAfterViewInit() {
-    jssor_1_slider_init();
+    jssor_thumpnail_slider_init();
   }
 }

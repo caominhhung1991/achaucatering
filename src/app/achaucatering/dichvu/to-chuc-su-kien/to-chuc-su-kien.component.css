@@ -1,0 +1,22 @@
+.banner {
+    /* background: url('./../../../../assets/img/to-chuc-tiec/banner-tiec2.jpg') center no-repeat;
+    background-size: cover;
+    height: 250px; */
+}
+
+.to-chuc-tiec h3 {
+    font-size: 25px;
+    font-family: "anton";
+    color: #333;
+    text-transform: uppercase;
+}
+
+.to-chuc-tiec p {
+    text-align: justify;
+    font-size: 14px;
+    color: #808080;
+}
+
+.col-md-6 {
+    margin-bottom: 15px;
+}
