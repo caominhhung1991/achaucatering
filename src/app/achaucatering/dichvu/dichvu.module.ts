@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { DichvuRoutingModule } from './dichvu-routing.module';
 import { DichvuService } from './dichvu.service';
@@ -11,21 +12,28 @@ import { NoContentComponent } from './no-content/no-content.component';
 import { AchaucateringModule } from '../achaucatering.module';
 import { ComponentModule } from '../../components/component.module';
 import { CacDichVuComponent } from './cac-dich-vu/cac-dich-vu.component';
+import { DichvuComponent } from './dichvu/dichvu.component';
+import { ThucDonToChucTiecComponent } from '../thuc-don-to-chuc-tiec/thuc-don-to-chuc-tiec.component';
+import { SuatAnCongNghiepComponent } from './suat-an-cong-nghiep/suat-an-cong-nghiep.component';
 
 @NgModule({
   imports: [
+    RouterModule,
     CommonModule,
     DichvuRoutingModule,
-    ComponentModule
+    ComponentModule,
   ],
   declarations: [
     CungCapThucPhamComponent, 
     QuayDichVuTienIchComponent, 
     ToChucSuKienComponent, 
-    TuVanThietKeComponent, 
     ChuoiNhaThuocComponent,
     NoContentComponent,
-    CacDichVuComponent
+    TuVanThietKeComponent,
+    CacDichVuComponent,
+    DichvuComponent,
+    ThucDonToChucTiecComponent,
+    SuatAnCongNghiepComponent,
   ],
   providers: [ DichvuService ]
 })

@@ -5,6 +5,7 @@ import { BtnXemthemComponent } from './btn-xemthem/btn-xemthem.component';
 import { BtnLienheComponent } from './btn-lienhe/btn-lienhe.component';
 import { BtnComponentComponent } from './btn-component/btn-component.component';
 import { SliderImageGalleryComponent } from './slider-image-gallery/slider-image-gallery.component';
+import { CacDoiTacComponent } from '../achaucatering/cac-doi-tac/cac-doi-tac.component';
 
 @NgModule({
   imports: [
@@ -15,13 +16,15 @@ import { SliderImageGalleryComponent } from './slider-image-gallery/slider-image
     BtnXemthemComponent,
     BtnLienheComponent,
     BtnComponentComponent,
-    SliderImageGalleryComponent
+    SliderImageGalleryComponent,
+    CacDoiTacComponent
   ],
   exports: [
     BtnXemthemComponent,
     BtnLienheComponent,
     BtnComponentComponent,
-    SliderImageGalleryComponent
+    SliderImageGalleryComponent,
+    CacDoiTacComponent
   ]
 })
 export class ComponentModule { }

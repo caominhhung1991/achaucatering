@@ -14,6 +14,7 @@ import { TuyendungDetailComponent } from './tuyendung-detail/tuyendung-detail.co
 import { LienHeComponent } from './lien-he/lien-he.component';
 import { CacDoiTacComponent } from './cac-doi-tac/cac-doi-tac.component';
 import { ThucDonToChucTiecComponent } from './thuc-don-to-chuc-tiec/thuc-don-to-chuc-tiec.component';
+import { DichvuComponent } from './dichvu/dichvu/dichvu.component';
 
 const achauRouting: Routes = [
   {
@@ -22,22 +23,38 @@ const achauRouting: Routes = [
     children: [
       { path: '', component: HomePageComponent },
       { path: 'tintuc-sukien', component: TintucSukienComponent },
-      { path: 'suat-an-cong-nghiep', component: SuatAnCongNghiepComponent },
-      { path: 'cung-cap-thuc-pham', component: CungCapThucPhamComponent },
-      { path: 'quay-dich-vu-tien-ich', component: QuayDichVuTienIchComponent },
-      { path: 'chuoi-nha-thuoc', component: ChuoiNhaThuocComponent },
-      { path: 'to-chuc-su-kien', component: ToChucSuKienComponent },
-      { path: 'tu-van-thiet-ke', component: TuVanThietKeComponent },
       { path: 'tuyen-dung', component: TuyenDungComponent },
       { path: 'tuyen-dung/:id', component: TuyendungDetailComponent },
       { path: 'slider', component: CacDoiTacComponent },
       { path: 'tintuc-sukien', component: TintucSukienComponent },
-      { path: 'lien-he', component: LienHeComponent },
-      { path: 'thuc-don-to-chuc-tiec', component: ThucDonToChucTiecComponent},
-      { path: '**', component: HomePageComponent}
+      { path: 'lien-he', component: LienHeComponent }
     ]
   }
 ]
+
+// const achauRouting: Routes = [
+//   {
+//     path: '',
+//     component: AchaucateringComponent,
+//     children: [
+//       { path: '', component: HomePageComponent },
+//       { path: 'tintuc-sukien', component: TintucSukienComponent },
+//       { path: 'suat-an-cong-nghiep', component: SuatAnCongNghiepComponent },
+//       { path: 'cung-cap-thuc-pham', component: CungCapThucPhamComponent },
+//       { path: 'quay-dich-vu-tien-ich', component: QuayDichVuTienIchComponent },
+//       { path: 'chuoi-nha-thuoc', component: ChuoiNhaThuocComponent },
+//       { path: 'to-chuc-su-kien', component: ToChucSuKienComponent },
+//       { path: 'tu-van-thiet-ke', component: TuVanThietKeComponent },
+//       { path: 'tuyen-dung', component: TuyenDungComponent },
+//       { path: 'tuyen-dung/:id', component: TuyendungDetailComponent },
+//       { path: 'slider', component: CacDoiTacComponent },
+//       { path: 'tintuc-sukien', component: TintucSukienComponent },
+//       { path: 'lien-he', component: LienHeComponent },
+//       { path: 'thuc-don-to-chuc-tiec', component: ThucDonToChucTiecComponent},
+//       { path: '**', component: HomePageComponent}
+//     ]
+//   }
+// ]
 
 @NgModule({
   imports: [
