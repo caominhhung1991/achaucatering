@@ -10,6 +10,7 @@ import { ChuoiNhaThuocComponent } from './chuoi-nha-thuoc/chuoi-nha-thuoc.compon
 import { NoContentComponent } from './no-content/no-content.component';
 import { AchaucateringModule } from '../achaucatering.module';
 import { ComponentModule } from '../../components/component.module';
+import { CacDichVuComponent } from './cac-dich-vu/cac-dich-vu.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { ComponentModule } from '../../components/component.module';
     ToChucSuKienComponent, 
     TuVanThietKeComponent, 
     ChuoiNhaThuocComponent,
-    NoContentComponent
+    NoContentComponent,
+    CacDichVuComponent
   ],
   providers: [ DichvuService ]
 })
