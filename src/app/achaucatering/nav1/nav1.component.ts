@@ -23,8 +23,11 @@ export class Nav1Component implements OnInit {
 
   ngOnInit() {
     $(".nav-click").on("click", () => {
-      $("#nav1").collapse("toggle");
-      window.scrollTo(0,0);
+      // console.log($(window).width());
+      if($(window).width() < 756) {
+        $("#nav1").collapse("toggle");
+        window.scrollTo(0,0);
+      }
     })
   }
 

@@ -16,7 +16,7 @@ export class SliderImageGalleryComponent implements OnInit {
   ngOnInit() {
     // jssor_image_gallary_slider_init();
     $('.carousel').carousel({
-      interval: 4000
+      interval: 3000
     })
 
   }
