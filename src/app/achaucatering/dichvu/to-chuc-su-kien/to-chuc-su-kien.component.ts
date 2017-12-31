@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../../../services/app.service';
 
 @Component({
   selector: 'app-to-chuc-su-kien',
@@ -11,11 +12,13 @@ export class ToChucSuKienComponent implements OnInit {
   hrefThucDon = "/dich-vu/thuc-don-to-chuc-tiec";
   contentXemTD = "Xem thực đơn";
 
-  constructor() {
+  constructor(
+    private appService: AppService
+  ) {
 
   }
 
   ngOnInit() {
-
+    this.appService.gotoTop(0);
   }
 }

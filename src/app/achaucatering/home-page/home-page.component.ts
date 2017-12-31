@@ -1,8 +1,8 @@
 import { Component, OnInit, AfterContentInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
-import { TweenMax } from 'gsap';
 import * as ScrollMagic from 'ScrollMagic';
+import { AppService } from '../../services/app.service';
 // declare variable jquery and $ to use jquery plugin
 declare var jquery: any;
 declare var $: any;
@@ -16,22 +16,18 @@ export class HomePageComponent implements OnInit, AfterContentInit {
 
   public controller = new ScrollMagic.Controller();
 
-  constructor() {
+  constructor(
+    private appService: AppService
+  ) {
 
   }
 
   ngOnInit() {
-
+    this.appService.gotoTop(0);
   }
 
   ngAfterContentInit() {
-    var headerScene = new ScrollMagic.Scene({
-      triggerElement: '#header-cantin',
-      triggerHook: 0,
-      duration: '55%'
-    })
-      .setPin('#header-cantin', { pushFollowers: false })
-      .addTo(this.controller);
+
 
     let trigHook = 0.6;
 

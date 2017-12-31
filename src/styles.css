@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+/* body, html {
+    height: 100%;
+} */
+
 .scene-fadein {
     opacity: 0 !important;
     transition: all 0.7s ease-out;

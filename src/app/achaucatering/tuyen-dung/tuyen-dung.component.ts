@@ -15,6 +15,7 @@ export class TuyenDungComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.appService.gotoTop(0);
     this.tuyendungs = this.appService.getTuyenDungs();
   }
 

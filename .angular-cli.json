@@ -29,11 +29,13 @@
         "../node_modules/popper.js/dist/umd/popper.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
         "assets/javascripts/jssor.slider.min.js",
+        "assets/javascripts/jssor_option.js",
         "../node_modules/gsap/src/uncompressed/TweenMax.js",
         "../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js",
         "../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js",
         "../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js",
-        "scripts.js"
+        "assets/javascripts/parallax-script.js"
+
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
